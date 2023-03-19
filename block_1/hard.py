@@ -17,7 +17,3 @@ def sum_args_with_required_args(num_1, num_2, num_3, num_4, *args, **kwargs):
     additional_numbers = args[2:] + list(kwargs.values())
     numbers.append(choice(additional_numbers))
     return sum(numbers)
-
-
-if __name__ == '__main__':
-    print(sum_args_with_required_args(1, 2, 3, 4, 5, nest=6))
